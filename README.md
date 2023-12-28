@@ -1,6 +1,6 @@
 # Currency Converter React
 
-![](readme_screenshot.png)
+![](readme_screenshot1.png)
 
 The Currency Converter React is a simple web application that allows users to convert Polish Zloty (PLN) to other major currencies such as Euro (EUR), US Dollar (USD), and British Pound (GBP). This project is built using React, making it easy to use and understand for both developers and users.
 
