@@ -49,11 +49,11 @@ const App = () => {
           setCurrencyId={setCurrencyId}
           currencyList={currencyList}
         />
-        <Time />
         <Button />
         <Result
           result={result}
         />
+        <Time />
       </Form>
     </Container>
   );
