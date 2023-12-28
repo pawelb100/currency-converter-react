@@ -1,4 +1,4 @@
-import './style.css';
+import { ResultParagraph } from "./styled";
 
 const Result = ({ result }) => {
 
@@ -6,9 +6,9 @@ const Result = ({ result }) => {
         return;
     
     return (
-        <p className="result__paragraph">
+        <ResultParagraph>
             {result.amount} PLN = {result.result} {result.name}
-        </p>
+        </ResultParagraph>
     )
 }
 

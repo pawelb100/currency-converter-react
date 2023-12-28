@@ -1,23 +1,22 @@
-import './style.css';
+import { CurrencyContainer, CurrencyLabel, Select, Option } from "./styled";
 
 const currency = ({ currencyId, setCurrencyId, currencyList }) => (
-    <div className="currency__container">
-        <label className="currency__label" htmlFor="currency">  
+    <CurrencyContainer>
+        <CurrencyLabel htmlFor="currency">  
             Currency:
-        </label>
-        <select
-            className="currency__select"
+        </CurrencyLabel>
+        <Select
             id="currency"
             value={currencyList[currencyId].name}
             onChange={(event) => (setCurrencyId(event.target.selectedIndex))}
         >
             {currencyList.map(({ id, name }) => (
-                <option key={id} className="currency__option">
+                <Option key={id}>
                     {name}
-                </option>
+                </Option>
             ))}
-        </select>
-    </div>
+        </Select>
+    </CurrencyContainer>
 )
 
 export default currency;

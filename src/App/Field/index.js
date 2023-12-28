@@ -1,22 +1,19 @@
-import './style.css';
+import { FieldContainer, FieldLabel, Input } from "./styled";
 
 const Field = ({ amount, setAmount }) => (
-    <div className="field__container">
-        <label
-            className="field__label"
-            htmlFor="amount">
+    <FieldContainer>
+        <FieldLabel htmlFor="amount">
             Amount:
-        </label>
-        <input
+        </FieldLabel>
+        <Input
             id="amount"
-            className="field__input"
             type="number"
             step="0.01"
             value={amount}
             onChange={(event) => (setAmount(event.target.value))}
             placeholder="Enter value"
             required={true} />
-    </div>
+    </FieldContainer>
 );
 
 export default Field;

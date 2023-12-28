@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './style.css';
+import { TimeParagraph } from './styled';
 
 const Time = () => {
 
@@ -17,9 +17,9 @@ const Time = () => {
     }, []);
 
     return (
-        <p className="paragraph">
+        <TimeParagraph>
             Current time is: {date.toLocaleString()}
-        </p>
+        </TimeParagraph>
     )
 }
 

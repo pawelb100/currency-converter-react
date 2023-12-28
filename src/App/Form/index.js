@@ -1,19 +1,18 @@
-import './style.css';
+import { FormContainer, FormFieldset, FormLegend } from "./styled";
 
 const Form = ({ title, calculateResult, children }) => (
   <form
-  className="form"
   onSubmit={(event) => {
     event.preventDefault();
     calculateResult();
   }}
   >
-    <fieldset className="form__fieldset">
-      <legend className="form__legend">{title}</legend>
-      <div className="form__container">
+    <FormFieldset>
+      <FormLegend>{title}</FormLegend>
+      <FormContainer>
         {children}
-      </div>
-    </fieldset>
+      </FormContainer>
+    </FormFieldset>
   </form>
 );
 

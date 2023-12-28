@@ -1,7 +1,7 @@
-import './style.css';
+import { ButtonStyled } from "./styled";
 
 const Button = () => (
-    <button className="button">Convert!</button>
+    <ButtonStyled>Convert!</ButtonStyled>
 )
 
 export default Button;
