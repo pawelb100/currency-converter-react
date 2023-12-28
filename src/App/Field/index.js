@@ -11,7 +11,7 @@ const Field = ({ amount, setAmount }) => (
             step="0.01"
             value={amount}
             onChange={(event) => (setAmount(event.target.value))}
-            placeholder="Enter value"
+            placeholder="PLN"
             required={true} />
     </FieldContainer>
 );
