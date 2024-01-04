@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { currencies } from '../currencies';
 import Container from './Container';
 import Form from './Form';
 import Currency from './Currency';
@@ -9,11 +10,7 @@ import Time from './Time';
 
 const App = () => {
 
-  const currencyList = [
-    { id: 1, name: "USD", rate: 0.24 },
-    { id: 2, name: "EUR", rate: 0.22 },
-    { id: 3, name: "GBP", rate: 0.2 }
-  ];
+  const currencyList = currencies;
 
   const [amount, setAmount] = useState("");
 
