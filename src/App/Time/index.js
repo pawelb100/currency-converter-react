@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { TimeParagraph } from './styled';
 import { useCurrentDate } from './useCurrentDate';
 
