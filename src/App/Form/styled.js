@@ -8,15 +8,15 @@ export const FormContainer = styled.div`
 `;
 
 export const FormLegend = styled.legend`
-    background-color: #a1ab6d;
+    background-color: ${({ theme }) => theme.color.greenSmoke };
     border-radius: 5px;
     padding: 10px;
-    border: 1px solid #000000;
+    border: 1px solid ${({ theme }) => theme.color.black };
 `;
 
 export const FormFieldset = styled.fieldset`
-    border: 1px solid #777;
+    border: 1px solid ${({ theme }) => theme.color.boulder };
     border-radius: 10px;
-    box-shadow: 0px 0px 4px 1px #000;
-    background-color: #ffffff; 
+    box-shadow: 0px 0px 4px 1px ${({ theme }) => theme.color.black };
+    background-color: ${({ theme }) => theme.color.white }; 
 `;

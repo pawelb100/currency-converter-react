@@ -7,7 +7,7 @@ export const CurrencyContainer = styled.div`
     justify-self: center;
     align-items: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax }) {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -19,7 +19,7 @@ export const CurrencyLabel = styled.label`
     flex-basis: 90px;
     margin: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax }) {
         flex-basis: auto;
     }
 `;
@@ -27,20 +27,20 @@ export const CurrencyLabel = styled.label`
 export const Select = styled.select`
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid #777;
+    border: 1px solid ${({ theme }) => theme.color.boulder };
     border-radius: 5px;
     margin: 10px;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white };
 
     &:hover {
-        background-color: #f2f2f2
+        filter: brightness(110%);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax }) {
         align-self: stretch;
     }
 `;
 
 export const Option = styled.option`
-    background-color: #ffffff;
+    background-color: ${({ theme }) => theme.color.white };
 `;

@@ -8,7 +8,7 @@ export const FieldContainer = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax }) {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -21,7 +21,7 @@ export const FieldLabel = styled.label`
     flex-basis: 90px;
     margin: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax }) {
         flex-basis: auto;
     }
 `;
@@ -30,14 +30,14 @@ export const Input = styled.input`
     flex-grow: 1;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #777;
+    border: 1px solid ${({ theme }) => theme.color.boulder };
     border-radius: 5px;
 
     &:hover {
-        background-color: #f2f2f2;
+        filter: brightness(110%);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax }) {
         align-self: stretch;
     }
 `;
