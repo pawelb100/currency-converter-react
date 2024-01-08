@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 
+const url = "https://api.currencyapi.com/v3/latest?apikey=cur_live_C5ch6dfPkVK3IApSkfJesqdsNSgvExjdySMDCGj2&currencies=&base_currency=PLN";
+
 const fetchData = async () => {
     try {
-        const response = await fetch("currencyList.json");
+        const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error(response.statusText);
