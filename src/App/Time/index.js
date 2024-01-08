@@ -1,14 +1,21 @@
 import { TimeParagraph } from './styled';
 import { useCurrentDate } from './useCurrentDate';
 
-const Time = () => {
+const Time = ({ lastUpdated }) => {
 
-    const date = useCurrentDate();
+    const currentDate = useCurrentDate();
+
+    const updatedDate = new Date(lastUpdated);
 
     return (
-        <TimeParagraph>
-            Current time is: {date.toLocaleString()}
-        </TimeParagraph>
+        <>
+            <TimeParagraph>
+                Current time is: {currentDate.toLocaleString()}
+            </TimeParagraph>
+            <TimeParagraph>
+                Last updated: {updatedDate.toLocaleDateString()}
+            </TimeParagraph>
+        </>
     )
 }
 

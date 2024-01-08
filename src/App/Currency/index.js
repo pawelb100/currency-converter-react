@@ -1,6 +1,6 @@
 import { CurrencyContainer, CurrencyLabel, Select, Option } from "./styled";
 
-const currency = ({ currencyId, setCurrencyId, currencyList }) => (
+const Currency = ({ currencyId, setCurrencyId, currencyList }) => (
     <CurrencyContainer>
         <CurrencyLabel htmlFor="currency">  
             Currency:
@@ -19,4 +19,4 @@ const currency = ({ currencyId, setCurrencyId, currencyList }) => (
     </CurrencyContainer>
 )
 
-export default currency;
+export default Currency;

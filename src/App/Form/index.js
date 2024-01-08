@@ -1,6 +1,6 @@
 import { FormContainer, FormFieldset, FormLegend } from "./styled";
 
-const Form = ({ title, calculateResult, children }) => (
+const Form = ({ title, calculateResult, dataFetched, children }) => (
   <form
   onSubmit={(event) => {
     event.preventDefault();
@@ -10,7 +10,9 @@ const Form = ({ title, calculateResult, children }) => (
     <FormFieldset>
       <FormLegend>{title}</FormLegend>
       <FormContainer>
-        {children}
+        {
+          dataFetched ? children : <p>Loading rates...</p> 
+        }
       </FormContainer>
     </FormFieldset>
   </form>

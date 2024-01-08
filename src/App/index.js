@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { currencies } from '../currencies';
 import Container from './Container';
 import Form from './Form';
 import Currency from './Currency';
@@ -7,10 +6,11 @@ import Field from './Field';
 import Button from './Button';
 import Result from './Result';
 import Time from './Time';
+import { useCurrencies } from './useCurrencies';
 
 const App = () => {
 
-  const currencyList = currencies;
+  const { currencyList, lastUpdated, dataFetched } = useCurrencies();
 
   const [amount, setAmount] = useState("");
 
@@ -35,6 +35,7 @@ const App = () => {
       <Form
         title={"Currency Conventer"}
         calculateResult={() => calculateResult(amount, currencyId, currencyList, setResult)}
+        dataFetched={dataFetched}
       >
         <Field
           amount={amount}
@@ -49,7 +50,9 @@ const App = () => {
         <Result
           result={result}
         />
-        <Time />
+        <Time
+          lastUpdated={lastUpdated}
+        />
       </Form>
     </Container>
   );
