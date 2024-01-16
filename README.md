@@ -1,46 +1,32 @@
 # Currency Converter React
 
-![](readme_screenshot1.png)
+![Currency Converter](/screenshot.png)
 
-The Currency Converter React is a simple web application that allows users to convert Polish Zloty (PLN) to other major currencies such as Euro (EUR), US Dollar (USD), and British Pound (GBP). This project is built using React, making it easy to use and understand for both developers and users.
+## Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Currency Converter React is a React.js project that enables users to convert the entered amount from Polish Złoty (PLN) to various other currencies. The application fetches currency data from the external API provided by currencyapi.com.
 
 ## Features
-- Convert Polish Zloty (PLN) to Euro (EUR), US Dollar (USD), and British Pound (GBP).
-- User-friendly interface with a simple and intuitive design.
-- Responsive design for various screen sizes.
 
+- **Currency Conversion:** Easily convert amounts from PLN to a wide range of currencies.
+- **External API Integration:** Utilizes the currencyapi.com API to retrieve up-to-date currency exchange rates.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **React.js:** - The project is built using the popular JavaScript library for building user interfaces.
+- **Styled Components:** Implements styled components for a modern and responsive design.
+- **Custom Hooks:** Enhances code organization and reusability through custom React hooks.
+- **Theming:** Consistent theming throughout the application for a cohesive user experience.
 
-### `npm start`
+## Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Explore the live [Currency Converter React](https://pawelb100-currency-converter-react.vercel.app/) on Vercel.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm run build`
+To run the project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository.
+2. Navigate to the project directory: `cd currency-converter-react`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
